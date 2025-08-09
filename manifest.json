@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Tweet Translator",
+  "version": "1.0",
+  "description": "Translate tweets into other languages directly on Twitter using LibreTranslate API.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["://twitter.com/", "://x.com/"],
+      "js": ["content.js"]
+    }
+  ]
+}
